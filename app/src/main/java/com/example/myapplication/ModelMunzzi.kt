@@ -126,6 +126,7 @@ data class BMunziiItem (
     val stationName: String? = null
 )
 
+// 여기서부터 ~ 라즈베리파이 (PIN 전까지)
 data class DeliveryItem(val response: DResponse)
 data class DResponse (
     val body: DBody,
