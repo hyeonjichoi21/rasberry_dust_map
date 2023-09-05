@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import DeliveryItem
 import MYModel
 import MyAModel
 import MyBModel
@@ -43,6 +44,11 @@ import java.io.IOException
 import java.util.*
 import kotlin.properties.Delegates
 import android.view.View
+import com.example.myapplication.PhotoActivity
+import retrofit2.Callback
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import java.lang.reflect.Array.get
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
@@ -179,7 +185,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 return true
             }
         })
-
     }
 
 
@@ -687,8 +692,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
     }
-
-
 
     override fun onPause() {
         super.onPause()
