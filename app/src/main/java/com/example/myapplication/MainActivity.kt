@@ -43,7 +43,6 @@ import java.io.IOException
 import java.util.*
 import kotlin.properties.Delegates
 import android.view.View
-import com.example.myapplication.PhotoActivity
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
@@ -180,6 +179,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 return true
             }
         })
+
     }
 
 
@@ -687,6 +687,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
     }
+
+
 
     override fun onPause() {
         super.onPause()
